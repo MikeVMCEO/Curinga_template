@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATMAN</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><img src="assets/logo.png" alt=""></a>
+        <div class="toggle"><img src="assets/toggle.png" alt=""></div>
+    </header>
+    <div class="banner">
+        <div class="content">
+            <h2>Put on a <span>Happy</span> face</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+            <a href="" class="play" onclick="toggle();" ><img src="assets/play.png" alt="">Watch Trailer</a>
+            <div class="slide"></div>
+            <ul class="sci">
+                <li><a href="#"><img src="assets/facebook.png"></a></li>
+                <li><a href="#"><img src="assets/twitter.png"></a></li>
+                <li><a href="#"><img src="assets/instagram.png"></a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="trailer">
+        <video src="assets/video.mp4" controls="true"></video>
+        <img src="assets/close.png" alt="" class="close" onclick="toggle();">
+    </div>
+
+    <script type="text/javascript">
+        function toggle(){
+            var trailer = document.querySelector('.trailer');
+            trailer.classList.toggle('active');
+            video.currentTime = 0;
+            video.pause();
+        }
+    </script>
+
+</body>
+</html>
